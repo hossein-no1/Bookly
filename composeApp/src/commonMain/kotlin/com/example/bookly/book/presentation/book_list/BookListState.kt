@@ -7,7 +7,7 @@ data class BookListState(
     val searchQuery : String = "Jetpack Compose",
     val searchResultList: List<Book> = emptyList(),
     val favoriteBookList: List<Book> = emptyList(),
-    val isLoading: Boolean = false,
+    val isLoading: Boolean = true,
     val selectedTabIndex: Int = 0,
     val errorMessage : UiText? = null
 )
