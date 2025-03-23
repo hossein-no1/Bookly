@@ -94,7 +94,7 @@ class BookListViewModel(
             )
         }
         bookRepository
-            .searchBookList(query)
+            .searchBooks(query)
             .onSuccess { searchResults ->
                 _state.update {
                     it.copy(
